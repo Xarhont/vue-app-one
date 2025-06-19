@@ -1,10 +1,17 @@
 <script setup>
+import Button from "./components/Button.vue";
 </script>
+
 <template>
-  <div>
-   {{ new Date().toLocaleDateString() }}
-  </div>
+  <main class="main">
+    <Button>Сохранить</Button>
+  </main>
 </template>
 
 <style scoped>
+.main {
+  background: var(--color-bg-main);
+  padding: 50px;
+  border-radius: 25px;
+}
 </style>
