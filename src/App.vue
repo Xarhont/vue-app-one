@@ -1,10 +1,12 @@
 <script setup>
 import Button from "./components/Button.vue";
+import ButtonDz from "./components/ButtonDz.vue";
 </script>
 
 <template>
   <main class="main">
     <Button>Сохранить</Button>
+    <ButtonDz>Начать игру</ButtonDz>
   </main>
 </template>
 
