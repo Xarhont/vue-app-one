@@ -18,8 +18,11 @@
   font-family: var(--font);
   font-size: 20px;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--color-primary);
   cursor: pointer;
+  display: flex;
+  gap:9px;
+  align-items: center;
 }
 
 .button:hover {
