@@ -28,7 +28,6 @@ function edit() {
     {{ city }}
     <div v-if="isEdited" class="city-input">
       <Input v-model="city" placeholder="Введите город" />
-      />
       <Button @click="select()">Сохранить</Button>
     </div>
     <Button v-else @click="edit()">
