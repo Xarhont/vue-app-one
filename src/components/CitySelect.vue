@@ -32,6 +32,7 @@ function edit() {
     <div v-if="isEdited" class="city-input">
       <Input
         v-model="city"
+        v-focus
         placeholder="Введите город"
         @keyup.enter="select()"
       />
