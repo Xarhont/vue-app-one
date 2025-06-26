@@ -19,11 +19,11 @@ const iconColor = computed(() => {
 <template>
   <button class="day-card" :class="{ active: isActive }">
     <IconSun v-if="weatherCode <= 1003" :color="iconColor" />
-    <IconRain
+    <IconCloud
       v-if="weatherCode >= 1006 && weatherCode < 1063"
       :color="iconColor"
     />
-    <IconCloud v-if="weatherCode >= 1063" :color="iconColor" />
+    <IconRain v-if="weatherCode >= 1063" :color="iconColor" />
     <div class="day-card__day">
       {{ date.toLocaleDateString("ru-RU", { weekday: "short" }) }}
     </div>
